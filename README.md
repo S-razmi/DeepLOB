@@ -2,7 +2,7 @@
 This project focuses on implementing the ["DeepLOB: Deep Convolutional Neural Networks for Limit Order Books"](https://arxiv.org/abs/1808.03668) paper by Zhang et al. on BTCUSDT Perpetual data. The model is trained on the one-second timeframe of LOB data, and the results are reviewed. A Temporal Convolutional Neural Network (TCN) is also designed and trained on the same data, and the results are compared with the original model. The code is implemented in TensorFlow using Python.
 
 ## Data Description
-The analysis was encompassed by a two-week span of Limit Order Book (LOB) samples, each taken at a 25-millisecond interval, incorporating 20 columns for both bid and ask prices. However, due to its huge size, the data had to be resampled to 1-second intervals. The Dataset is available on [Kaggle] (https://www.kaggle.com/datasets/siavashraz/bitcoin-perpetualbtcusdtp-limit-order-book-data)
+The analysis was encompassed by a two-week span of Limit Order Book (LOB) samples, each taken at a 25-millisecond interval, incorporating 20 columns for both bid and ask prices. However, due to its huge size, the data had to be resampled to 1-second intervals. The Dataset is available on [Kaggle](https://www.kaggle.com/datasets/siavashraz/bitcoin-perpetualbtcusdtp-limit-order-book-data)
 ## Normalization
 The same approach outlined in the original paper was followed for normalization purposes. Specifically, a sliding window with a length of one day was utilized to calculate the mean and standard deviation of past data. This enabled the current row to be scaled based on those values.
 ## Labeling
